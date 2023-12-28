@@ -1,0 +1,49 @@
+.pageStack {
+  display: flex;
+  flex-direction: column;
+  .containerCompetences {
+    font-size: 25px;
+    padding: 15px 25px;
+    align-items: center;
+  }
+  .containerImageCompetences {
+    margin-top: 230px;
+    width: 100vw;
+    height: 65vh;
+    .git {
+      width: 25vw;
+      margin-left: 55px;
+      animation: zoom-in-zoom-out 5s infinite;
+
+    }
+    .react{
+      width: 8vw;
+      margin-right: 15px;
+      animation: zoom-in-zoom-out 5s infinite; 
+    }
+    .css {
+      width: 7vw;
+      animation: zoom-in-zoom-out 5s infinite;
+
+    }
+    .competences {
+      width: 10vw;
+      margin-right: 130px;
+      margin-left: 50px;
+      border-radius: 20px;
+      animation: zoom-in-zoom-out 5s infinite;
+    }
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0, 0);
+    }
+    50% {
+      transform: scale(0.2, 0.2);
+    }
+    100% {
+      transform: scale(0.9, 0.9);
+    }
+  
+  }
+}
