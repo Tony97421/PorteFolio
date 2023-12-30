@@ -14,7 +14,7 @@
     .Folio {
       font-size: 3rem;
       padding-top: 5.7%;
-      color: #E9BCB7;
+      color: #e9bcb7;
     }
     .containerProjets {
       display: flex;
@@ -27,7 +27,7 @@
       }
       .jets {
         font-size: 3rem;
-        color: #E9BCB7;
+        color: #e9bcb7;
         margin-right: 10px;
       }
       .projectCard {
@@ -44,9 +44,9 @@
           img {
             transition: transform 0.3s;
             &:hover {
-              transform: scale(1.06);
+              transform: scale(1.04);
               transition: 0.3s;
-              box-shadow: 5px 5px 10px 0px #E9BCB7;
+              box-shadow: 4px 4px 4px 0px #e9bcb7;
             }
           }
         }

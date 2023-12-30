@@ -1,5 +1,8 @@
+import NavContact from "../components/NavContact";
+
 const Stacks = () => {
   return (
+    <>
     <div className="pageStack">
       <div className="containerCompetences">
         <h1>Mes Compétences :</h1>
@@ -32,7 +35,9 @@ const Stacks = () => {
         />
       </div>
     </div>
+    </>
   );
 };
+
 
 export default Stacks;
