@@ -1,86 +1,111 @@
 .containerPrincipal {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+
   .containerNameEtTitre {
-    display: flex;
-    padding-top: 2%;
-    padding-left: 2%;
+    height: 20vh;
+
     .name {
-      font-size: 3rem;
+      font-size: 2rem;
     }
-    .Porte {
-      font-size: 5rem;
-      padding-top: 4%;
+
+    .titles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .porte {
+        font-size: 2rem;
+        padding-top: 4%;
+      }
+
+      .folio {
+        font-size: 2rem;
+        padding-top: 1vh;
+        color: #e9bcb7;
+      }
     }
-    .Folio {
-      font-size: 3rem;
-      padding-top: 5.7%;
+  }
+
+  .containerProjets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+
+    .pro {
+      font-size: 2rem;
+      margin-bottom: 1vh;
       color: #e9bcb7;
     }
-    .containerProjets {
+
+    .projectCard {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      height: 80vh;
-      width: 65vw;
-      .pro {
-        font-size: 3rem;
-      }
-      .jets {
-        font-size: 3rem;
-        color: #e9bcb7;
-        margin-right: 10px;
-      }
-      .projectCard {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 50vw;
-        height: 50vh;
-        .projet1,
-        .projet2,
-        .projet3 {
-          width: 15vw;
-          height: 40vh;
-          img {
-            transition: transform 0.3s;
-            &:hover {
-              transform: scale(1.04);
-              transition: 0.3s;
-              box-shadow: 4px 4px 4px 0px #e9bcb7;
-            }
-          }
-        }
-        .projet1 .projet2 .projet3,
+
+      .projet {
+        width: 100%;
+        margin-bottom: 2vh;
+        text-align: center;
+
         h1 {
           font-size: 20px;
           padding-bottom: 1vh;
         }
-        projet1,
-        .sharring {
-          position: absolute;
-          border: 2px solid black;
+
+        img {
+          transition: transform 0.3s;
           cursor: pointer;
-          border-radius: 10px;
           object-fit: cover;
-          width: 15vw;
-          height: 40vh;
+          border: 2px solid black;
+          border-radius: 10px;
+          width: 100%;
+
+          &:hover {
+            transform: scale(1.04);
+            box-shadow: 4px 4px 4px 0px #e9bcb7;
+            transition: 0.3s;
+          }
         }
-        projet2,
-        .wildClash {
-          cursor: pointer;
-          border: 2px solid black;
-          border-radius: 10px;
-          object-fit: cover;
-          width: 15vw;
-          height: 40vh;
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .containerPrincipal {
+    align-items: flex-start;
+    .containerNameEtTitre {
+      .name {
+        font-size: 4rem;
+      }
+      .titles {
+        flex-direction: row;
+        padding: 4rem;
+        .porte {
+          font-size: 4rem;
         }
-        projet3,
-        .wildTube {
-          cursor: pointer;
-          border: 2px solid black;
-          border-radius: 10px;
-          object-fit: cover;
-          width: 15vw;
+        .folio {
+          font-size: 5rem;
+        }
+      }
+    }
+    .containerProjets {
+      .pro {
+        font-size: 4rem;
+        margin-bottom: 3vh;
+      }
+    }
+    .projectCard {
+      width: 45vw;
+      gap: 50px;
+      flex-direction: row !important;
+      .projet {
+        height: 45vh;
+        img {
           height: 40vh;
         }
       }

@@ -1,52 +1,71 @@
-.containerContact{
-    display: flex;
-    gap: 10px;
-    justify-content: end;
-    margin-top: 3px;
+.containerContact {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-right: 20px;
+  .gitcat {
+    width: 2.5vw;
+    height: 5.5vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
+  }
+  .linkedin {
+    cursor: pointer;
+    width: 2.5vw;
+    height: 5.5vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
+  }
+  .envoyer {
+    cursor: pointer;
+    width: 2.5vw;
+    height: 5.5vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
+  }
+  .cv {
+    cursor: pointer;
+    width: 2.5vw;
+    height: 5.5vh;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media (max-width: 376px) and (min-height: 667px) {
+  .containerContact {
+    justify-content: center;
     .gitcat{
-        width: 2.5vw;
-        height: 5.5vh;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        cursor: pointer;
-        &:hover{
-            transition: .3s;
-            transform: scale(1.2);
-        }
+        width: 9vw;
     }
     .linkedin{
-        cursor: pointer;
-        width: 2.5vw;
-        height: 5.5vh;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        &:hover{
-            transition: .3s;
-            transform: scale(1.2);
-        }
+        width: 9vw;
     }
     .envoyer{
-        cursor: pointer;
-        width: 2.5vw;
-        height: 5.5vh;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        &:hover{
-            transition: .3s;
-            transform: scale(1.2);
-        }
+        width: 9vw;
     }
     .cv{
-        cursor: pointer;
-        width: 2.5vw;
-        height: 5.5vh;
-        font-size: 4rem;
-        text-align: center;
-        text-decoration: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        &:hover{
-            transition: .3s;
-            transform: scale(1.2);
-        }
+        width: 9vw;
+        font-size: 3rem;
     }
+  }
 }
