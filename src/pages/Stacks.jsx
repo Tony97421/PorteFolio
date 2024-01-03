@@ -1,5 +1,3 @@
-import NavContact from "../components/NavContact";
-
 const Stacks = () => {
   return (
     <>
