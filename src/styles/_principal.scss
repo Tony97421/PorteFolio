@@ -81,10 +81,13 @@
 }
 @media (min-width: 1400px) {
   .containerPrincipal {
+    border: 1px solid red;
+    padding-top: 0;
     .containerNameEtTitre {
+      padding-top: 0;
       .titles {
         flex-direction: row;
-        padding-left: 100px;
+        padding-left: 50px;
         .porte {
           font-size: 5rem;
         }
@@ -97,7 +100,6 @@
     .containerProjets {
       .pro {
         font-size: 3rem;
-        margin-bottom: 3vh;
       }
     }
     .projectCard {
