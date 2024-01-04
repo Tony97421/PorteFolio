@@ -18,7 +18,9 @@ const NavContact = () => {
       <a href="mailto:techer307@gmail.com">
       <img className="envoyer" src="/images/envoyer.png" />
       </a>
-      <a className="cv" href="/CV/CV de Tony.pdf">cv</a>
+      <a className="cv" href="/CV/CV de Tony.pdf">
+        <p>CV</p>
+      </a>
     </div>
   );
 };

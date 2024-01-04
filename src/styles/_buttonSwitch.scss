@@ -1,56 +1,70 @@
 @import "https://unpkg.com/open-props";
-.buttonSwitch {
-  width: 20vw;
-  height: 8vh;
-  font-size: 1rem;
-  color: #E9BCB7;
-  cursor: pointer;
-  margin-left: 40%;
-  border: 3px solid white;
-  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
-  transition: transform 0.1s;
-  &:hover {
-    --y: -10;
-    --scale: 1.1;
-    --border-scale: 1;
-  }
-  &:active {
-    --y: 5%;
-    --scale: 0.9;
-    --border-scale: 0.9, 0.8;
-  }
+.containerButton {
+  display: flex;
+  padding-top: 2vh;
+  justify-content: center;
+  .buttonSwitch {
+    width: 60vw;
+    height: 7vh;
+    font-size: 1.5rem;
+    color: #e9bcb7;
+    cursor: pointer;
+    border: 3px solid white;
+    transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+    transition: transform 0.1s;
+    &:hover {
+      --y: -10;
+      --scale: 1.1;
+      --border-scale: 1;
+    }
+    &:active {
+      --y: 5%;
+      --scale: 0.9;
+      --border-scale: 0.9, 0.8;
+    }
 
-  &:before {
-    content: "";
-    position: absolute;
-    inset: calc(var(--size-3) * -1);
-    border: var(--size-2) solid #E9BCB7;
-    transform: scale(var(--border-scale, 0));
-    transition: transform 0.125s;
+    &:before {
+      content: "";
+      position: absolute;
+      inset: calc(var(--size-3) * -1);
+      border: var(--size-2) solid #e9bcb7;
+      transform: scale(var(--border-scale, 0));
+      transition: transform 0.125s;
 
-    --angle-one: 105deg;
-    --angle-two: 290deg;
-    --spread-one: 30deg;
-    --spread-two: 40deg;
-    --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
-    --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
-    --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
-    --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+      --angle-one: 105deg;
+      --angle-two: 290deg;
+      --spread-one: 30deg;
+      --spread-two: 40deg;
+      --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+      --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+      --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+      --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
 
-    mask: conic-gradient(
-      transparent 0 var(--start-one),
-      white var(--start-one) var(--end-one),
-      transparent var(--end-one) var(--start-two),
-      white var(--start-two) var(--end-two),
-      transparent var(--end-two)
-    );
+      mask: conic-gradient(
+        transparent 0 var(--start-one),
+        white var(--start-one) var(--end-one),
+        transparent var(--end-one) var(--start-two),
+        white var(--start-two) var(--end-two),
+        transparent var(--end-two)
+      );
 
-    z-index: -1;
+      z-index: -1;
+    }
   }
 }
-@media (min-width: 1200px){
-  .buttonSwitch {
-    font-size: 3rem;
-    
+@media (min-width: 1367px) {
+  .containerButton {
+    .buttonSwitch {
+      width: 40vw;
+      font-size: 2.2rem;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .containerButton {
+    .buttonSwitch {
+      width: 40vw;
+      font-size: 2.5rem;
+    }
   }
 }

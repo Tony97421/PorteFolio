@@ -1,47 +1,25 @@
 .containerContact {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   gap: 10px;
-  margin: 5px 10px;
-  .gitcat {
-    width: 2.5vw;
-    height: 5.5vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    cursor: pointer;
-    &:hover {
-      transition: 0.3s;
-      transform: scale(1.2);
-    }
-  }
-  .linkedin {
-    cursor: pointer;
-    width: 2.5vw;
-    height: 5.5vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    &:hover {
-      transition: 0.3s;
-      transform: scale(1.2);
-    }
-  }
+  .gitcat,
+  .linkedin,
   .envoyer {
-    cursor: pointer;
-    width: 2.5vw;
-    height: 5.5vh;
+    width: 12vw;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
     &:hover {
       transition: 0.3s;
       transform: scale(1.2);
     }
   }
   .cv {
-    cursor: pointer;
-    width: 2.5vw;
-    height: 5.5vh;
-    font-size: 4rem;
-    text-align: center;
+    font-size: 25px;
+    display: flex;
+    width: 12vw;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     &:hover {
@@ -50,22 +28,71 @@
     }
   }
 }
-
-@media (max-width: 1200px){
+@media (min-width: 700px) {
   .containerContact {
-    justify-content: center;
-    .gitcat{
-        width: 9vw;
+    justify-content: end;
+    .gitcat,
+    .linkedin,
+    .envoyer {
+      width: 8vw;
     }
-    .linkedin{
-        width: 9vw;
+    .cv {
+      width: 8vw;
     }
-    .envoyer{
-        width: 9vw;
+  }
+}
+@media (min-width: 850px) {
+  .containerContact {
+    .gitcat,
+    .linkedin,
+    .envoyer {
+      width: 6vw;
     }
-    .cv{
-        width: 9vw;
-        font-size: 3rem;
+
+    .cv {
+      width: 6vw;
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .containerContact {
+    padding: 5px;
+    .gitcat,
+    .linkedin,
+    .envoyer {
+      width: 4vw;
+      
+    }
+    .cv {
+      width: 4vw;
+      display: flex;
+      justify-content: center;
+      
+    }
+  }
+}
+@media (min-width: 1200px){
+  .containerContact {
+    padding: 5px;
+    .gitcat,
+    .linkedin,
+    .envoyer {
+      width: 3vw;
+      
+    }
+    .cv {
+      width: 3vw;
+      display: flex;
+      justify-content: center;
+      p{
+        &:hover{
+          color: #e9bcb7;
+        }
+      }
+      
     }
   }
 }

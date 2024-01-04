@@ -3,7 +3,6 @@ import ButtonSwitch from "../components/ButtonSwitch";
 import { NavLink } from "react-router-dom";
 import NavContact from "../components/NavContact";
 
-
 const Principal = () => {
   return (
     <>
