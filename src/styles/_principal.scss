@@ -43,6 +43,10 @@
           transition: 0.3s;
         }
       }
+      .projets{
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
@@ -124,6 +128,10 @@
             width: 45vw;
           }
         }
+      }
+      .projets{
+        display: flex;
+        align-items: center;
       }
     }
   }

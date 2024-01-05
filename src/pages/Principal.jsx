@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonSwitch from "../components/ButtonSwitch";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import NavContact from "../components/NavContact";
 
 const Principal = () => {
@@ -46,15 +46,15 @@ const Principal = () => {
                 />
               </a>
             </div>
-            <div className="projet">
-              <h1>WildTube</h1>
-              <NavLink to="/EnCours">
+            <div className="projets">
+              <h1>D'autres projets arrivent bientôt...</h1>
+              {/* <NavLink to="/EnCours">
                 <img
                   className="wildTube"
                   src="/images/wildTube.png"
                   alt="wildTube"
                 />
-              </NavLink>
+               </NavLink> */}
             </div>
           </section>
         </div>
