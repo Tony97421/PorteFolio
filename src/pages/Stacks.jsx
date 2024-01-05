@@ -8,7 +8,7 @@ const Stacks = () => {
       <div className="containerImageCompetences">
         <img
           className="competences"
-          src="/public/images/mysql.png"
+          src="/images/mysql.png"
           alt="Mysql"
         />
         <img
@@ -17,18 +17,18 @@ const Stacks = () => {
           alt="react"
         />
         <img className="competences" src="/public/images/html.png" alt="html" />
-        <img className="css" src="/public/images/css.png" alt="css" />
+        <img className="css" src="/images/css.png" alt="css" />
         <img
           className="git"
-          src="/public/images/github.png"
+          src="/images/github.png"
           alt="github"
         />
-        <img className="competences" src="/public/images/js.png" alt="JS" />
-        <img className="competences" src="/public/images/node.png" alt="Node" />
-        <img className="competences" src="/public/images/npm.png" alt="npm" />
+        <img className="competences" src="/images/js.png" alt="JS" />
+        <img className="competences" src="/images/node.png" alt="Node" />
+        <img className="competences" src="/images/npm.png" alt="npm" />
         <img
           className="competences"
-          src="/public/images/agile.png"
+          src="/images/agile.png"
           alt="agile"
         />
       </div>
