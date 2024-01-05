@@ -13,10 +13,10 @@ const Stacks = () => {
         />
         <img
           className="react"
-          src="/public/images/react.png"
+          src="/images/react.png"
           alt="react"
         />
-        <img className="competences" src="/public/images/html.png" alt="html" />
+        <img className="competences" src="/images/html.png" alt="html" />
         <img className="css" src="/images/css.png" alt="css" />
         <img
           className="git"
