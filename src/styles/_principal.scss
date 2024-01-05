@@ -99,6 +99,7 @@
     .containerProjets {
       .pro {
         font-size: 3rem;
+        
       }
     }
     .projectCard {
@@ -111,13 +112,17 @@
           padding-bottom: 15px;
         }
         img {
-          -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+          filter: grayscale(100%);
+          background: transparent;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
           width: 15vw;
-          height: 40vh;
           &:hover {
-            -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
+            filter: grayscale(0);
+            width: 45vw;
           }
         }
       }
