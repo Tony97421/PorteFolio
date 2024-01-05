@@ -35,7 +35,7 @@ const Principal = () => {
             <div className="projet">
               <h1>Wildclash</h1>
               <a
-                href="https://clash-heroes-eazaswc3f-techer-tonys-projects.vercel.app/"
+                href="https://clash-heroes.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
