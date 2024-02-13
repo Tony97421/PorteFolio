@@ -46,15 +46,19 @@ const Principal = () => {
                 />
               </a>
             </div>
-            <div className="projets">
-              <h1>D'autres projets arrivent bientôt...</h1>
-              {/* <NavLink to="/EnCours">
+            <div className="projet">
+              <h1>WildTube</h1>
+              <a
+                href="https://lnkd.in/edutJN2f"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className="wildTube"
-                  src="/images/wildTube.png"
+                  src="/images/Wildtube.png"
                   alt="wildTube"
                 />
-               </NavLink> */}
+              </a>
             </div>
           </section>
         </div>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Josefin+Sans:wght@300&family=Poppins&family=Tilt+Neon&display=swap');
 
 *{
-    background-color: #32645B;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Fjalla One', sans-serif;
@@ -14,6 +13,7 @@ html,body, :root{
     min-height: 100vh;
     min-width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 :root{
